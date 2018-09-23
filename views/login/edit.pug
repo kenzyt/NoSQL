@@ -1,0 +1,24 @@
+html
+    head
+        meta(charset='UTF-8')
+        title hyperplanning - register
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(rel='stylesheet', href='/stylesheets/login.css')
+    body
+        .well.well-sm.col-xs-offset-4.col-xs-6.margin_top
+            h1.text-center Register
+            form.form-inline(action="/adduser", method="POST")
+                div.form-group
+                    label(for="username") USERNAME:
+                    input.form-control(name="username" placeholder="write your username here")
+                div.form-group
+                    label(for="password") PASSWORD:
+                    input.form-control(type='password' name="password" placeholder="write your password here")
+                div.form-group
+                    label(for="firstname") FIRSTNAME:
+                    input.form-control(name="firstname" placeholder="write your firstname here")
+                div.form-group
+                    label(for="lastname") LASTNAME:
+                    input.form-control(name="lastname" placeholder="write your lastname here")
+                div
+                    button.btn.btn-primary(type="submit") Save
